@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+:root{
+  --cor1: #F8B195;
+  --cor2: #F67280;
+  --cor3: #C06C84;
+  --cor4: #6C5B7B;
+  --cor5: #355C7D;
+}
+
 /*Default*/
 html{
   font-family: 'Roboto', sans-serif;
@@ -12,10 +20,33 @@ html{
 }
 
 body{
+  background-image: linear-gradient(90deg, var(--cor5), var(--cor4));
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+}
+
+.search {
+  position: relative;
+  height: 5rem;
+}
+
+.search .input {
+  background-color: white;
+  border: 0;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  height: 5rem;
+  width: 5rem;
+  transition: width .3s ease;
+}
+
+.btn {
+  
+}
+
+.active {
+
 }
